@@ -1,7 +1,8 @@
 const http = require('http');
 const webSocketServer = require('websocket').server;
 const server = http.createServer();
-server.listen(9898);
+
+const port = 9898;
 
 const wsServer = new webSocketServer({
     httpServer: server
@@ -16,4 +17,8 @@ wsServer.on('request', function(request) {
     connection.on('close', function(reasonCode, description) {
         console.log('Client has disconnected.');
     });
+});
+
+server.listen(port,() => {
+    console.log('Server started on port ' + port);
 });

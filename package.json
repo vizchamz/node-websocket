@@ -5,15 +5,12 @@
     "ws": "^7.5.3"
   },
   "scripts": {
-    "devStart": "nodemon server.js",
     "start": "node server.js"
   },
   "name": "websocket",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {
-    "nodemon": "^2.0.12"
-  },
+
   "author": "Visal Dharmasiri",
   "license": "ISC",
   "description": ""

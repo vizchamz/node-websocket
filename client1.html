@@ -7,7 +7,7 @@
   <h1>Client1</h1>
   <button onclick="sendMessage()">Send Msg</button>
   <script>
-    const ws = new WebSocket('wss://node-websocket-v1.herokuapp.com/client1');
+    const ws = new WebSocket('wss://node-websocket-v1.herokuapp.com/index');
     ws.onopen = function() {
         console.log('WebSocket Client Connected');
         ws.send('Hi this is web client1.');

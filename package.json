@@ -1,11 +1,12 @@
 {
   "dependencies": {
     "http": "^0.0.1-security",
+    "nodemon": "^2.0.12",
     "websocket": "^1.0.34",
     "ws": "^7.5.3"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "name": "websocket",
   "version": "1.0.0",

@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const webSocketServer = require('websocket').server;
 
-fs.readFile('index.html', (err, html) => {
+fs.readFile('client1.html', (err, html) => {
     if (err) {
         throw err;
     }
